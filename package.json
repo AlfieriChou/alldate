@@ -1,0 +1,22 @@
+{
+  "name": "alldate",
+  "version": "1.0.1",
+  "description": "Get all kind of date.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AlfieriChou/alldate.git"
+  },
+  "keywords": [
+    "date"
+  ],
+  "author": "AlfieriChou",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/AlfieriChou/alldate/issues"
+  },
+  "homepage": "https://github.com/AlfieriChou/alldate#readme"
+}
