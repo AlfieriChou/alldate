@@ -56,7 +56,8 @@ AllDate.prototype.YMD = () => {
   const year = time.getFullYear()
   let month = time.getMonth() + 1
   month = month < 10 ? '0' + month : month
-  const day = time.getDate()
+  let day = time.getDate()
+  day = day < 10 ? '0' + day : day
   return year + '-' + month + '-' + day
 }
 
@@ -65,7 +66,8 @@ AllDate.prototype.YMDhms = () => {
   const year = time.getFullYear()
   let month = time.getMonth() + 1
   month = month < 10 ? '0' + month : month
-  const day = time.getDate()
+  let day = time.getDate()
+  day = day < 10 ? '0' + day : day
   let hour = time.getHours()
   hour = hour < 10 ? '0' + hour : hour
   let minutes = time.getMinutes()
