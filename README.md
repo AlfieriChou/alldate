@@ -46,6 +46,12 @@ const time = new AllDate()
 console.log(time.day()) // 26
 ```
 
+* get week
+```javascript
+const time = new AllDate()
+console.log(time.week()) // 星期六
+```
+
 * get hour
 ```javascript
 const time = new AllDate()
@@ -62,6 +68,12 @@ console.log(time.minutes()) // 59
 ```javascript
 const time = new AllDate()
 console.log(time.second()) // 27
+```
+
+* get MD
+```javascript
+const time = new AllDate()
+console.log(time.MD()) // 06-30
 ```
 
 * get YMD

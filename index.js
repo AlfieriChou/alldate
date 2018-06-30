@@ -33,6 +33,13 @@ AllDate.prototype.day = () => {
   return result
 }
 
+AllDate.prototype.week = () => {
+  const weekList = ['星期天', '星期一', '星期二', '星期三', '星期四', '星期五', '星期六']
+  const time = new Date()
+  const result = time.getDay()
+  return weekList[result]
+}
+
 AllDate.prototype.hour = () => {
   const time = new Date()
   const result = time.getHours()
@@ -49,6 +56,15 @@ AllDate.prototype.second = () => {
   const time = new Date()
   const result = time.getSeconds()
   return result
+}
+
+AllDate.prototype.MD = () => {
+  const time = new Date()
+  let month = time.getMonth() + 1
+  month = month < 10 ? '0' + month : month
+  let day = time.getDate()
+  day = day < 10 ? '0' + day : day
+  return month + '-' + day
 }
 
 AllDate.prototype.YMD = () => {
