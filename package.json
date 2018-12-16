@@ -4,7 +4,7 @@
   "description": "Get all kind of date.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "mocha --exit"
   },
   "repository": {
     "type": "git",
@@ -18,5 +18,9 @@
   "bugs": {
     "url": "https://github.com/AlfieriChou/alldate/issues"
   },
-  "homepage": "https://github.com/AlfieriChou/alldate#readme"
+  "homepage": "https://github.com/AlfieriChou/alldate#readme",
+  "devDependencies": {
+    "mocha": "^5.2.0",
+    "should": "^13.2.3"
+  }
 }

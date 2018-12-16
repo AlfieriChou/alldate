@@ -100,4 +100,4 @@ AllDate.prototype.YMDhms = () => {
   return year + '-' + month + '-' + day + ' ' + hour + ':' + minutes + ':' + second
 }
 
-export default AllDate
+module.exports = AllDate
