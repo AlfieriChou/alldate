@@ -1,6 +1,6 @@
 {
   "name": "alldate",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Get all kind of date.",
   "main": "index.js",
   "scripts": {

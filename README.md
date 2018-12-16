@@ -46,10 +46,16 @@ const time = new AllDate()
 console.log(time.day()) // 26
 ```
 
-* get week
+* get chinese week
 ```javascript
 const time = new AllDate()
-console.log(time.week()) // 星期六
+console.log(time.chWeek()) // 星期六
+```
+
+* get english week
+```javascript
+const time = new AllDate()
+console.log(time.enWeek()) // saturday
 ```
 
 * get hour

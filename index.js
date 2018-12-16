@@ -33,8 +33,15 @@ AllDate.prototype.day = () => {
   return result
 }
 
-AllDate.prototype.week = () => {
+AllDate.prototype.chWeek = () => {
   const weekList = ['星期天', '星期一', '星期二', '星期三', '星期四', '星期五', '星期六']
+  const time = new Date()
+  const result = time.getDay()
+  return weekList[result]
+}
+
+AllDate.prototype.enWeek = () => {
+  const weekList = ['sunday', 'monday', 'tuesday', 'wednesday', 'thursday', 'friday', 'saturday']
   const time = new Date()
   const result = time.getDay()
   return weekList[result]
