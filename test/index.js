@@ -15,4 +15,22 @@ describe('test AllDate!!!', () => {
     const date = time.timestamp()
     date.should.be.a.Number()
   })
+
+  it('test get year!!', () => {
+    const year = time.year()
+    const dateYear = new Date().getFullYear()
+    year.should.match(dateYear)
+  })
+
+  it('test get month!!', () => {
+    const month = time.month()
+    const dateMonth = new Date().getMonth()
+    month.should.match(dateMonth)
+  })
+
+  it('test get day!!', () => {
+    const day = time.day()
+    const dateDay = new Date().getDate()
+    day.should.match(dateDay)
+  })
 })
