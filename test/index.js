@@ -2,15 +2,11 @@ const AllDate = require('../')
 require('should')
 const describe = require('mocha').describe
 const it = require('mocha').it
+const moment = require('moment')
 
 const time = new AllDate()
 
 describe('test AllDate!!!', () => {
-  it('test get Date now!!', () => {
-    const date = time.date()
-    JSON.stringify(date).should.match(JSON.stringify(new Date()))
-  })
-
   it('test get timestamp!!', () => {
     const date = time.timestamp()
     date.should.be.a.Number()
@@ -32,5 +28,35 @@ describe('test AllDate!!!', () => {
     const day = time.day()
     const dateDay = new Date().getDate()
     day.should.match(dateDay)
+  })
+
+  it('test get hour!!', () => {
+    const hour = time.hour()
+    const dateHour = new Date().getHours()
+    hour.should.match(dateHour)
+  })
+
+  it('test get minutes!!', () => {
+    const minutes = time.minutes()
+    const dateMinutes = new Date().getMinutes()
+    minutes.should.match(dateMinutes)
+  })
+
+  it('test get second!!', () => {
+    const second = time.second()
+    const dateSecond = new Date().getSeconds()
+    second.should.match(dateSecond)
+  })
+
+  it('test get MD!!', () => {
+    const MD = time.MD()
+    const dateMD = moment(new Date()).format('MM-DD')
+    MD.should.match(dateMD)
+  })
+
+  it('test get YMD!!', () => {
+    const YMD = time.YMD()
+    const dateYMD = moment(new Date()).format('YYYY-MM-DD')
+    YMD.should.match(dateYMD)
   })
 })
